@@ -32,7 +32,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh "curl http://localhost:3000"
+                    sh "curl http://host.docker.internal:3000"
                 }
             }
         }
